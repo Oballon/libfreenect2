@@ -250,7 +250,7 @@ Note: Ubuntu 12.04 is too old to support. Debian jessie may also be too old, and
     make
     make install
     ```
-    You need to specify `cmake -Dfreenect2_DIR=$HOME/freenect2/lib/cmake/freenect2` for CMake based third-party application to find libfreenect2.
+    You need to specify `cmake -WITH_FREENECT2=Yes -Dfreenect2_DIR=$HOME/freenect2/lib/cmake/freenect2` for CMake based third-party application to find libfreenect2.
 * Set up udev rules for device access: `sudo cp ../platform/linux/udev/90-kinect2.rules /etc/udev/rules.d/`, then replug the Kinect.
 * export `LIBVA_DRIVER_NAME=i965` in `.bashrc`
 * Run the test program: `./bin/Protonect`
