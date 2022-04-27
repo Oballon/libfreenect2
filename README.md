@@ -236,7 +236,7 @@ Note: Ubuntu 12.04 is too old to support. Debian jessie may also be too old, and
     - (Jetson TK1) It is preloaded.
     - (Nvidia/Intel dual GPUs) After `apt-get install cuda`, use `sudo prime-select intel` to use Intel GPU for desktop.
     - (Other) Follow Nvidia website's instructions. You must install the samples package.
-* Install VAAPI (optional, Intel only)
+* Install VAAPI (optional, Intel only, Linux no suggestion)
     1. (Ubuntu 14.04 only) `sudo dpkg -i debs/{libva,i965}*deb; sudo apt-get install -f`
     2. (Other) `sudo apt-get install libva-dev libjpeg-dev`
     3. Linux kernels 4.1 to 4.3 have performance regression. Use 4.0 and earlier or 4.4 and later (Though Ubuntu kernel 4.2.0-28.33~14.04.1 has backported the fix).
